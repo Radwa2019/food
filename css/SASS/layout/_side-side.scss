@@ -1,0 +1,165 @@
+/*  Start Sidebar */
+.section-one .sidebar {
+ width: 30%;
+} 
+.sidebar .search {
+ position: relative;
+}
+.sidebar .search .btn-1 {
+ width: 100%;
+ padding: 10px;
+ border: 1px solid #eee;
+ border-radius: 25px;
+ font-size: 17px;
+}
+.sidebar .search .btn-2 {
+ position: absolute;
+ left: 80%;
+ top: 50%;
+ transform: translateY(-8px);
+ background-color: transparent;
+}
+.sidebar .search .btn-2 i{
+ color: var(--secondary-color);
+}
+.sidebar h2{
+ margin-bottom: 10px;
+}
+.sidebar table {
+ margin-top: 0.5em;
+}
+.sidebar .box.flex{
+ width: 100%;
+ margin-top: 10px;
+ margin-bottom: 10px;
+}
+.sidebar .box.flex .image{
+ flex-basis: 25%;
+ height: 80px;
+}
+.sidebar .box.flex .image img {
+ border-radius: 10px;
+}
+.sidebar .box.flex .text {
+ flex-basis: 73%;
+}
+.sidebar .box.flex .text h2 {
+ font-size: 1em;
+ line-height: 1.1em;
+}
+.sidebar .box .text .second-line.flex{
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 5px;
+ }
+ .sidebar .box.flex .text .second-line .vertical-line {
+   display: inline-block;
+  width: 1px;
+  height: 13px;
+  background-color: black;
+  margin-left: 5px;
+  margin-right: 5px;
+  }
+  .sidebar .box.flex .text .second-line h3 {
+   display: inline-block;
+  font-size: 11px;
+  }
+  .sidebar .box.flex .text .second-line i {
+    display: inline-block;
+    color:red;
+    font-size: 12px;
+  }
+/*  Start Offer */
+.sidebar .offer {
+  margin-top: var(--main-margin);
+ position: relative;
+ width: 95%;
+ height: 320px;
+ background-image: url(https://img.freepik.com/free-photo/female-chef-adding-sauce-dish_23-2148763222.jpg?size=338&ext=jpg);
+ background-size: cover;
+}
+.sidebar .offer::before{
+ content: ""; 
+ position: absolute;
+ width:100%;
+ height:100%;
+ background-color:black;
+ opacity: 0.7;
+}
+
+.sidebar .offer .infront {
+  position: absolute;
+  top: 50px;
+}
+.sidebar .offer h2 {
+ font-size: 2.5em;
+ color: rgb(255, 255, 255);
+ padding-left: 10px;
+ letter-spacing: 3px;
+}
+.sidebar .offer h2 span {
+ color: red;
+ font-size: 45px;
+ font-weight: bold;
+ margin-right: 20px;
+ letter-spacing: 0;
+}
+.sidebar .offer .infront p{
+  color: #fff;
+ font-size: 1em;
+ margin-left: 20px;
+ margin-top: 20px;
+}
+.sidebar .offer button{
+  display: inline-block;
+ width: 150px;
+ padding: 10px;
+ color:#fff;
+ font-size: 18px;
+ margin-left: 20px;
+ margin-top: 20px;
+ background-color: red;
+ border-radius: 25px;
+}
+
+/*  End Offer */
+/* start Images Grid */
+.sidebar .photos {
+  margin-top: var(--main-margin);
+}
+.sidebar .photos .image img{
+ border-radius: 10px;
+}
+/* End Images Grid */
+/* Start Tags */
+.sidebar .button.grid {
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  grid-gap: 5px;
+  margin-top: var(--main-margin);
+  margin-bottom: var(--main-margin);
+}
+.sidebar .button button {
+ display: inline-block; 
+ font-size: 15px;
+ background-color: #eee;
+ border-radius: 20px;
+ padding-top: 5px;
+ padding-bottom: 5px;
+}
+/* End Tags */
+ /* End Sidebar */
+ @media (max-width: 375px) {
+  .section-one .hidden-sm {
+    display: none;
+ }
+ }
+ @media (min-width: 375px) and (max-width: 767px){
+ .section-one .hidden-sm {
+    display: none;
+ }
+}
+ @media (min-width: 768px) and (max-width: 991px) {
+.section-one .container .flex .sidebar .box.flex {
+  flex-direction: column;
+}
+ }

@@ -1,0 +1,200 @@
+/* Start pages */
+.pages {
+ width: 350px;
+ margin: 20px auto;
+ display: flex;
+ justify-content: space-around;
+}
+.pages div {
+ width: 50px;
+ height: 50px;
+ border: 1px solid var(--secondary-color);
+ border-radius: 50%;
+ text-align: center;
+ color: var(--secondary-color);
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ transition: 0.5s all;
+}
+.pages div:hover {
+ background-color: red;
+}
+.pages div a {
+ text-decoration: none;
+ color: rgb(117, 117, 117);
+}
+.pages div:hover a {
+ color: #fff;
+}
+.pages div:hover a::before {
+ background-color: #fff;
+}
+.pages div:hover a::after {
+ border-top-color: #fff;
+ border-left-color: #fff;
+}
+.pages .arrow a {
+ position: relative;
+}
+.pages .left a {
+ position: relative;
+}
+.pages .right a {
+ position: relative;
+}
+.pages .arrow a::before {
+ content: "";
+ position: absolute;
+ width: 20px;
+ height: 1px;
+ left: -10px;
+ background-color: var(--secondary-color) ;
+}
+.pages .left a::after {
+ content: "";
+ position: absolute;
+ width: 10px;
+ height: 10px;
+ border: 2px solid;
+ border-color: var(--secondary-color) transparent transparent var(--secondary-color);
+ transform: rotate(-45deg);
+ top: -6.8px;
+ left: -10px;
+}
+.pages .right a::after {
+ content: "";
+ position: absolute;
+ width: 10px;
+ height: 10px;
+ border:2px solid var(--secondary-color) ;
+ border-color: var(--secondary-color) transparent transparent var(--secondary-color) ;
+ transform: rotate(135deg);
+ top: -6.5px;
+ right:-10px;
+}
+/* End pages */
+/* Start Footer */
+.footer {
+ margin-top:50px;
+}
+.footer .container {
+ background-color: red;
+ border-radius: 10px;
+ border-top-left-radius: 10px;
+ border-top-right-radius: 10px;
+ padding: 20px;
+}
+.footer .text {
+ flex-basis: 50%;
+
+}
+.footer .text h2 {
+ font-size: 30px;
+ margin-bottom: 5px;
+ color: #fff;
+ margin: 0;
+}
+.footer .text p {
+ line-height: 1.5;
+ color: #fff;
+}
+.footer .button {
+ position: relative;
+ flex-basis: 50%;
+ margin: auto 0;
+ color: #fff;
+}
+.footer .button input {
+ display: block;
+ width: 100%;
+ padding: 15px;
+ text-align: left;
+ border-radius: 30px;
+ background-color: rgba(255, 254, 254, 0.3);
+}
+.footer .button input::placeholder {
+ color: #fff;
+}
+
+.footer .button :nth-child(2) {
+ display: block;
+ width: fit-content;
+ position: absolute;
+ font-size: 15px;
+ padding: 7px;
+ right: 20px;
+ top: 50%;
+ transform: translateY(-15px);
+ text-align: center;
+ border-radius: 30px;
+ background-color: #fff;
+ color: red;
+}
+.footer .end-image {
+ width: 90%;
+ height: 100px;
+ position: relative;
+ margin: 0 auto;
+ margin-top: -50px;
+ margin-bottom: 50px;
+ z-index: -1;
+ background-image: url(https://image.freepik.com/free-photo/vegetables-set-left-black-slate_1220-685.jpg);
+ background-size: cover;
+}
+.footer .end-image::before {
+ content: "";
+ position: absolute;
+ width: 100%;
+ height: 100%;
+ background-color: #000;
+ opacity: 0.5;
+}
+@media (max-width: 768px) {
+ .pages {
+  width: 250px;
+ }
+ .pages div {
+  width: 30px;
+  height: 30px;
+ }
+ .pages .arrow::before {
+  width: 10px;
+  height: 2px;
+ }
+ .pages .left::after {
+  width: 5px;
+  height: 5px;
+  left:7.5px;
+ }
+ .pages .right::after {
+  width: 5px;
+  height: 5px;
+  right:7.5px;
+ } 
+.footer .flex {
+ flex-direction: column;
+ text-align: center;
+}
+.footer .text {
+ width: 80%;
+}
+.footer .button {
+ width: 60%;
+ margin-top: var(--main-margin);
+}
+.footer .button :nth-child(2) {
+ position: relative;
+ transform: translateY(0);
+ margin-top: var(--main-margin);
+ width: 100%;
+ right: 0;
+ border-radius: 10px;
+}
+.footer .button input {
+ border-radius: 10px;
+ text-align: center;
+}
+}
+
+/* End Footer */
