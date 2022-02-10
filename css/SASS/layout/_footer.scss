@@ -10,12 +10,11 @@
  height: 50px;
  border: 1px solid var(--secondary-color);
  border-radius: 50%;
- text-align: center;
  color: var(--secondary-color);
  display: flex;
  justify-content: center;
  align-items: center;
- transition: 0.5s all;
+ transition: 0.2s;
 }
 .pages div:hover {
  background-color: red;
@@ -23,56 +22,17 @@
 .pages div a {
  text-decoration: none;
  color: rgb(117, 117, 117);
+ transition: 0.2s;
+}
+.pages div a {
+ display: flex;
+ justify-content: center;
+ align-items: center;
 }
 .pages div:hover a {
  color: #fff;
 }
-.pages div:hover a::before {
- background-color: #fff;
-}
-.pages div:hover a::after {
- border-top-color: #fff;
- border-left-color: #fff;
-}
-.pages .arrow a {
- position: relative;
-}
-.pages .left a {
- position: relative;
-}
-.pages .right a {
- position: relative;
-}
-.pages .arrow a::before {
- content: "";
- position: absolute;
- width: 20px;
- height: 1px;
- left: -10px;
- background-color: var(--secondary-color) ;
-}
-.pages .left a::after {
- content: "";
- position: absolute;
- width: 10px;
- height: 10px;
- border: 2px solid;
- border-color: var(--secondary-color) transparent transparent var(--secondary-color);
- transform: rotate(-45deg);
- top: -6.8px;
- left: -10px;
-}
-.pages .right a::after {
- content: "";
- position: absolute;
- width: 10px;
- height: 10px;
- border:2px solid var(--secondary-color) ;
- border-color: var(--secondary-color) transparent transparent var(--secondary-color) ;
- transform: rotate(135deg);
- top: -6.5px;
- right:-10px;
-}
+
 /* End pages */
 /* Start Footer */
 .footer {
@@ -158,20 +118,13 @@
   width: 30px;
   height: 30px;
  }
- .pages .arrow::before {
-  width: 10px;
-  height: 2px;
+ .pages div a {
+  font-size: 12px;
  }
- .pages .left::after {
-  width: 5px;
-  height: 5px;
-  left:7.5px;
+ .pages .arrow i {
+  font-size: 12px;
  }
- .pages .right::after {
-  width: 5px;
-  height: 5px;
-  right:7.5px;
- } 
+  
 .footer .flex {
  flex-direction: column;
  text-align: center;
